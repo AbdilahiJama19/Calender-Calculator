@@ -1,6 +1,3 @@
-var maleDays = ['Kwasi' , 'Kwadwo' , 'Kwabena', 'Kwaku' , 'Yaw' , 'Kofi' , 'Kwame'];
-var femaleDays = ['Akosua' , 'Adwoa' , 'Abenaa' , 'Akua' , 'Yaa' , 'Afua','Ama'];
-
 function dayCalculator(day , month , century , decade) {
   var cc = (((century / 4) - 2 * century - 1));
   var yy = ((5 * decade / 4));
@@ -11,6 +8,9 @@ function dayCalculator(day , month , century , decade) {
 
 function determineName() {
   let x;
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var maleDays = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+  var femaleDays = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua','Ama'];
   var day = parseInt(document.getElementById('day').value);
   var month = parseInt(document.getElementById('month').value);
   var century = parseInt(document.getElementById('century').value);
