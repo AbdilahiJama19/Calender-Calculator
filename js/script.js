@@ -22,10 +22,19 @@ function determineName() {
   }  else {
     x = maleDays[dayCalc];
   }
-  function maxMonth() {
 
+}
+
+function maxMonths {
+  var months = document.getElementById('month').value;
+  if(month <= 0 && month > 12) {
+    console.log("Invalid Entry");
   }
-   console.log(x);
-   console.log(dayCalc);
+}
 
+function maxDays {
+  var days = document.getElementById('day').value;
+  if(day <= 0  && > 31){
+    console.log("Invalid Entry");
+  }
 }
