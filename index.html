@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <script src="js/script.js"></script>
     <title>Akan Calculator</title>
   </head>
   <body>
@@ -74,12 +75,15 @@
           <div class="form-group">
            <label for="decade">YY :</label>
            <input type="text" maxlength="2" min="1" max="99" id="decade">
+         </div>
+        </form>
+        <div class="button">
+          <button onclick="determineName();" type="button" id="bt1" class="btn btn-secondary">Submit</button>
         </div>
-       </div>
-     </form>
-     <div class="button">
-       <button onclick="determineName();" type="button" id="bt1" class="btn btn-secondary">Submit</button>
-     </div>
-    <script src="js/script.js"></script>
+      </div>
+      <div class="output-name">
+        <h3>Here is the your Akan Name</h3>
+      </div>
+    </div>
   </body>
  </html>
