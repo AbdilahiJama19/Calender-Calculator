@@ -1,89 +1,89 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <script src="js/script.js"></script>
-    <title>Akan Calculator</title>
-  </head>
-  <body>
-    <h1 class="akanName">Akan Name Calculator</h1>
-    <div class="container">
-      <div class="description">
-       <h4> Akan names are derived from the Ghanian culture. Frequently in Ghana, <br>
-            children are given their first name as 'day name' which corresponds to <br>
-            the day in the week they werre born. Here are Ghanian day names.
-       </h4>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <script src="js/script.js"></script>
+  <title>Akan Calculator</title>
+</head>
+<body>
+<h1 class="akanName">Akan Name Calculator</h1>
+<div class="container">
+  <div class="description">
+    <h4> Akan names are derived from the Ghanian culture. Frequently in Ghana, <br>
+      children are given their first name as 'day name' which corresponds to <br>
+      the day in the week they werre born. Here are Ghanian day names.
+    </h4>
+  </div>
+  <div class="names">
+    <div class="row">
+      <div class="col">
+        <h2 class="male">Male</h2>
+        <ul>
+          <li>Sunday: Kwasi</li>
+          <li>Monday: Kwadwo</li>
+          <li>Tuesday: Kwabena</li>
+          <li>Wednesday: Kwaku</li>
+          <li>Thursday: Yaw</li>
+          <li>Friday: Kofi</li>
+          <li>Saturday: Kwame</li>
+        </ul>
       </div>
-      <div class="names">
-        <div class="row">
-          <div class="col">
-            <h2 class="male">Male</h2>
-            <ul>
-             <li>Sunday: Kwasi</li>
-             <li>Monday: Kwadwo</li>
-             <li>Tuesday: Kwabena</li>
-             <li>Wednesday: Kwaku</li>
-             <li>Thursday: Yaw</li>
-             <li>Friday: Kofi</li>
-             <li>Saturday: Kwame</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h2 class="female">Female</h2>
-            <ul>
-             <li>Sunday: Akosua</li>
-             <li>Monday: Adwoa</li>
-             <li>Tuesday: Abenaa</li>
-             <li>Wednesday: Akua</li>
-             <li>Thursday: Yaa</li>
-             <li>Friday: Afua</li>
-             <li>Saturday: Ama</li>
-            </ul>
-           </div>
-        </div>
-      </div>
-      <div class="Gender">
-        <form action="/index.html">
-         <label for="Gender">Please select your gender:  </label>
-          <select name="gender" id="gender">
-           <option value="">Please select .....</option>
-           <option value="female" id="female">Female</option>
-           <option value="male" id = "female">Male</option>
-         </select>
-        </form>
-      </div>
-      <div class="DOBform">
-        <p class="form-field">Enter your Date of Birth in the fields, then click "Submit"</p>
-        <form id="dates" action="index.html" method="post">
-          <div class="form-group">
-            <label for="day">DD :</label>
-            <input type="text" maxlength="2" min="1" max="31" id="day">
-          </div>
-          <div class="form-group">
-            <label for="month">MM :</label>
-            <input type="text" maxlength="2" min="1" max="12" id="month">
-          </div>
-
-          <div class="form-group">
-           <label for="century">CC :</label>
-           <input type="text" maxlength="2" min="18" max="22" id="century">
-          </div>
-
-          <div class="form-group">
-           <label for="decade">YY :</label>
-           <input type="text" maxlength="2" min="1" max="99" id="decade">
-         </div>
-        </form>
-        <div class="button">
-          <button onclick="determineName();" type="button" id="bt1" class="btn btn-secondary">Submit</button>
-        </div>
-      </div>
-      <div class="output-name">
-        <h3>Here is the your Akan Name</h3>
+      <div class="col">
+        <h2 class="female">Female</h2>
+        <ul>
+          <li>Sunday: Akosua</li>
+          <li>Monday: Adwoa</li>
+          <li>Tuesday: Abenaa</li>
+          <li>Wednesday: Akua</li>
+          <li>Thursday: Yaa</li>
+          <li>Friday: Afua</li>
+          <li>Saturday: Ama</li>
+        </ul>
       </div>
     </div>
-  </body>
- </html>
+  </div>
+  <div class="Gender">
+    <form action="/index.html">
+      <label for="Gender">Please select your gender: </label>
+      <label for="gender"></label><select name="gender" id="gender">
+      <option value="">Please select .....</option>
+      <option value="female" id="female">Female</option>
+      <option value="male" id="male">Male</option>
+    </select>
+    </form>
+  </div>
+  <div class="DOBform">
+    <p class="form-field">Enter your Date of Birth in the fields, then click "Submit"</p>
+    <form id="dates" action="index.html" method="post">
+      <div class="form-group">
+        <label for="day">DD :</label>
+        <input type="text" maxlength="2" min="1" max="31" id="day">
+      </div>
+      <div class="form-group">
+        <label for="month">MM :</label>
+        <input type="text" maxlength="2" min="1" max="12" id="month">
+      </div>
+      <div class="form-group">
+        <label for="century">CC :</label>
+        <input type="text" maxlength="2" min="18" max="22" id="century">
+      </div>
+      <div class="form-group">
+        <label for="decade">YY :</label>
+        <input type="text" maxlength="2" min="1" max="99" id="decade">
+      </div>
+    </form>
+    <div class="button">
+      <button onclick="determineName();" type="button" id="bt1" class="btn btn-secondary">Submit
+      </button>
+    </div>
+  </div>
+  <div id="output-name">
+    <div class="card">
+      <h3 class="h3card">Here is your akan name</h3>
+    </div>
+  </div>
+</div>
+</body>
+</html>
