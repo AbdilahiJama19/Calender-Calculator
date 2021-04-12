@@ -26,8 +26,10 @@ function determineName() {
 
   if (gender === 'female') {
     x = femaleDays[dayCalc];
-  } else {
+  } else if (gender === 'male'){
     x = maleDays[dayCalc];
+  } else {
+    alert("Please enter a gender!");
   }
   document.getElementById('output-name').innerHTML = x;
 }
