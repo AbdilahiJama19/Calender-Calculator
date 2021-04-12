@@ -1,9 +1,10 @@
-function dayCalculator(day , month , century , decade) {
-  var cc = (((century / 4) - 2 * century - 1));
-  var yy = ((5 * decade / 4));
-  var mmdd = ((26 *(month + 1) / 10)) + day;
-  var total = (cc + yy + mmdd) % 7;
-  return total;
+function dayCalculator() {
+  var cc = parseInt(document.getElementById('century').value);
+  var yy = parseInt(document.getElementById('decade').value);
+  var mm = parseInt(document.getElementById('month').value);
+  var dd = parseInt(document.getElementById('day').value);
+  var akanDay = (((cc / 4) - 2*cc - 1) +((5*yy / 4)) + ((26*(mm + 1) / 10)) + dd) % 7;
+  return akanDay;
 }
 
 function determineName() {
