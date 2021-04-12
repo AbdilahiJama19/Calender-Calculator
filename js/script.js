@@ -19,14 +19,14 @@ function determineName() {
   const century = parseInt(document.getElementById('century').value);
   const decade = parseInt(document.getElementById('decade').value);
 
-  let dayCalc = days[akanDay];
-  var gender = document.getElementById('gender').value;
-  if(gender == "female") {
+  let dayCalc = dayCalculator(day, month,decade, century);
+  const gender = document.getElementById('gender').value;
+  =if(gender ==+ "female") {
     x = femaleDays[dayCalc]
   }  else {
     x = maleDays[dayCalc];
   }
-
+  document.getElementById('output-name').innerHTML = x;
 }
 
 
