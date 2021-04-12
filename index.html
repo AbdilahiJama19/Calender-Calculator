@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <script src="js/script.js"></script>
     <title>Akan Calculator</title>
   </head>
   <body>
@@ -58,15 +57,26 @@
       <div class="DOBform">
         <p class="form-field">Enter your Date of Birth in the fields, then click "Submit"</p>
         <form id="dates" action="index.html" method="post">
-        DD : <input type="text" maxlength = "2" id ="day">
-        MM : <input type="text" maxlength = "2" id ="month">
-        CC : <input type="text" maxlength = "2" id = "century">
-        YY : <input type="text" maxlength="2" id = "decade">
-        </form>
-        <div class="button">
-          <button onclick="determineName();" type="button" id="bt1" class="btn btn-secondary">Submit</button>
+          <div class="form-group">
+            <label for="day">DD :</label>
+            <input type="text" maxlength="2" min="1" max="31" id="day">
+          </div>
+          <div class="form-group">
+            <label for="month">MM :</label>
+            <input type="text" maxlength="2" min="1" max="12" id="month">
+          </div>
+
+          <div class="form-group">
+           <label for="century">CC :</label>
+           <input type="text" maxlength="2" min="18" max="22" id="century">
+          </div>
+
+          <div class="form-group">
+           <label for="decade">YY :</label>
+           <input type="text" maxlength="2" min="1" max="99" id="decade">
         </div>
-      </div>
-    </div>
+       </div>
+     </form>
+    <script src="js/script.js"></script>
   </body>
-</html>
+ </html>
