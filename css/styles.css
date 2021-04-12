@@ -10,11 +10,19 @@
 }
 .Gender {
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 .DOBform {
   margin-top: 50px;
+
 }
+
 .button {
   margin-top: 20px;
   margin-left: 20px;
+}
+#output-name {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
 }
