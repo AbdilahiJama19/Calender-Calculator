@@ -4,7 +4,7 @@ function dayCalculator() {
   var mm = parseInt(document.getElementById('month').value);
   var dd = parseInt(document.getElementById('day').value);
   var akanDay = (((cc / 4) - 2*cc - 1) +((5*yy / 4)) + ((26*(mm + 1) / 10)) + dd) % 7;
-  return akanDay;
+  return akanDay.toFixed();
 }
 
 function determineName() {
@@ -16,11 +16,10 @@ function determineName() {
   var month = parseInt(document.getElementById('month').value);
   var century = parseInt(document.getElementById('century').value);
   var decade = parseInt(document.getElementById('decade').value);
-  let dayCalc = dayCalculator(day,month,century,decade);
+  let dayCalc = dayCalculator();
   var gender = document.getElementById('gender').value;
   if(gender == "female") {
-    x = femaleDays[dayCalc];
-    console.log(femaleDays[dayCalc])
+    x = femaleDays[dayCalc]
   }  else {
     x = maleDays[dayCalc];
   }
@@ -28,17 +27,13 @@ function determineName() {
 }
 
 function maxMonths() {
-  var months = document.getElementById('month').value;
-  if(months <= 0 && months > 12) {
-    console.log("Invalid Entry");
-  }
-}
-
-function maxDays() {
   var days = document.getElementById('day').value;
+  var months = document.getElementById('month').value;
+  
   if(days <= 0  && days > 31){
-    console.log("Invalid Entry");
+    alert("Invalid Entry");
+  }
+  else if(months <= 0 && months > 12) {
+    alert("Invalid Entry");
   }
 }
-
-function is
